@@ -1,0 +1,162 @@
+/*.flexik
+{
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+}*/
+
+* 
+{
+    box-sizing: border-box;
+}
+
+.flexik
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header
+{
+    width: 100%;
+    height: 300px;
+    background-image: url("dogs.jpg");
+    text-align:center;
+    color:azure;
+}
+
+nav
+{
+    display: flex;
+    flex-direction: column;
+    background-color: lightsteelblue;
+    width:25%;
+    padding-right: 5%;
+    padding-left: 1%;
+}
+
+section
+{
+    width:100%;
+    display: flex;
+    height: fit-content;
+    background-color:lightblue;
+}
+
+footer
+{
+    width: 100%;
+    height: 30px;
+    background-color:royalblue;
+    text-align:right;
+    color:azure;
+}
+
+article
+{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.news
+{
+    margin: 20px;
+}
+
+.newstitle
+{
+    color:white;
+    border: 2px solid royalblue;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: royalblue;
+    padding: 5px;
+    width: fit-content;
+    height: fit-content;
+    font-weight: bold;
+    font-size: 1.875rem;
+}
+
+.newstext
+{
+    padding: 0px 15px 15px 15px;
+    margin: 1px;
+    width: fit-content;
+    height: fit-content;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.lewy
+{
+    float:left;
+}
+
+.prawy
+{
+    float:right;
+}
+
+.przycisk
+{
+    text-align: center;
+    margin-bottom: 10%;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    background-color: lightsteelblue;
+    width:100%;
+}
+
+.przycisk:hover
+{
+    background-color: royalblue;
+    color: white;
+    width:100%;
+}
+
+.czytajdalej
+{
+    text-align: center;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    margin:auto;
+    text-decoration: none;
+    border: 1px solid royalblue;
+    background-color: royalblue;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.czytajdalej:hover
+{
+    background-color: white;
+    color: royalblue;
+}
+
+@media (max-width: 800px) {
+    section {
+      flex-direction: column;
+    }
+}
+
+.gruby
+{
+    font-weight: bold;
+}
+
+.pochylony
+{
+    font-style: italic;
+}
+
+.obrazki
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
